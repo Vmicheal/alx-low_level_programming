@@ -24,8 +24,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!buffer)
 		return (0);
 
-	count1 = read (fd,  buffer, letters);
-	count2 =write (STDOUT_FILENO, buffer, count1);
+	count1 = read(fd, buffer, letters);
+	count2 = write(STDOUT_FILENO, buffer, count1);
 
 	close(fd);
 
